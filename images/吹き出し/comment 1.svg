@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 325.24 116.22">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #393a3a;
+        font-family: KozGoPr6N-Regular-83pv-RKSJ-H, 'Kozuka Gothic Pr6N';
+        font-size: 18.7px;
+      }
+
+      .cls-2 {
+        letter-spacing: .25em;
+      }
+
+      .cls-3 {
+        letter-spacing: .25em;
+      }
+
+      .cls-4 {
+        letter-spacing: 0em;
+      }
+
+      .cls-5 {
+        fill: #fff;
+        stroke: #c2c0bf;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <g id="_レイヤー_1-2" data-name="レイヤー 1">
+    <g>
+      <g>
+        <rect class="cls-5" x=".5" y=".5" width="292.12" height="91.61" rx="26.53" ry="26.53" transform="translate(293.12 92.61) rotate(-180)"/>
+        <circle class="cls-5" cx="302.2" cy="94.87" r="9.58"/>
+        <circle class="cls-5" cx="319.11" cy="110.08" r="5.64"/>
+      </g>
+      <text class="cls-1" transform="translate(39.75 37.25)"><tspan x="0" y="0">在宅で内職は頑張っても</tspan><tspan class="cls-2" x="0" y="32.73">月1</tspan><tspan class="cls-4" x="38.36" y="32.73">万円にもならな</tspan><tspan class="cls-3" x="169.29" y="32.73">い</tspan><tspan x="192.67" y="32.73">...</tspan></text>
+    </g>
+  </g>
+</svg>

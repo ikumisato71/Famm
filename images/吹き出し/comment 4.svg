@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 325.24 116.22">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #393a3a;
+        font-family: KozGoPr6N-Regular-83pv-RKSJ-H, 'Kozuka Gothic Pr6N';
+        font-size: 18.7px;
+      }
+
+      .cls-2 {
+        letter-spacing: .25em;
+      }
+
+      .cls-3 {
+        fill: #fff;
+        stroke: #c2c0bf;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <g id="_レイヤー_1-2" data-name="レイヤー 1">
+    <g>
+      <rect class="cls-3" x="32.63" y=".5" width="292.12" height="91.61" rx="26.53" ry="26.53"/>
+      <text class="cls-1" transform="translate(74.8 37.25)"><tspan x="0" y="0">働きたいけど</tspan><tspan x="0" y="32.73">子どもを預けられな</tspan><tspan class="cls-2" x="168.34" y="32.73">い</tspan><tspan x="191.72" y="32.73">...</tspan></text>
+      <circle class="cls-3" cx="23.05" cy="94.87" r="9.58"/>
+      <circle class="cls-3" cx="6.14" cy="110.08" r="5.64"/>
+    </g>
+  </g>
+</svg>
