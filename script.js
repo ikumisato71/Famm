@@ -101,19 +101,27 @@ focusTrap.addEventListener("focus", (e) => {
   hamburger.focus();
 });
 // 吹き出しの動き
-const box1 = document.querySelector(".comments img:nth-of-type(1)");
-const box2 = document.querySelector(".comments img:nth-of-type(2)");
-const box3 = document.querySelector(".comments img:nth-of-type(3)");
-const box4 = document.querySelector(".comments img:nth-of-type(4)");
+document.addEventListener("DOMContentLoaded", () => {
+  const box1 = document.querySelector(".comments img:nth-of-type(1)");
+  const box2 = document.querySelector(".comments img:nth-of-type(2)");
+  const box3 = document.querySelector(".comments img:nth-of-type(3)");
+  const box4 = document.querySelector(".comments img:nth-of-type(4)");
 
-const TL = gsap.timeline({
-  defaults: {
-    duration: 0.5,
-    y: 30,
-  },
+  const TL = gsap.timeline({
+    defaults: {
+      duration: 0.5,
+      y: 30,
+    },
+    scrollTrigger: {
+      trigger: ".campaign",
+      scrub: true,
+      start: "top 80%",
+      end: "bottom 20%",
+    },
+  });
+
+  TL.from(box1, { autoAlpha: 0 })
+    .from(box2, { autoAlpha: 0 })
+    .from(box3, { autoAlpha: 0 })
+    .from(box4, { autoAlpha: 0 });
 });
-
-TL.from(box1, { autoAlpha: 0 })
-  .from(box2, { autoAlpha: 0 })
-  .from(box3, { autoAlpha: 0 })
-  .from(box4, { autoAlpha: 0 });
