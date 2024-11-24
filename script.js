@@ -108,15 +108,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const box4 = document.querySelector(".comments img:nth-of-type(4)");
 
   const TL = gsap.timeline({
-    defaults: {
-      duration: 0.5,
-      y: 30,
-    },
     scrollTrigger: {
       trigger: ".campaign",
       scrub: true,
-      start: "top 80%",
-      end: "bottom 20%",
+      start: "top 10%",
+      end: "bottom 10%",
+    },
+    defaults: {
+      duration: 0.5,
+      y: 30,
     },
   });
 
