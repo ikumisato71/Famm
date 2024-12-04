@@ -100,28 +100,92 @@ accordionTrigger.forEach((item) => {
 focusTrap.addEventListener("focus", (e) => {
   hamburger.focus();
 });
-// 吹き出しの動き
-document.addEventListener("DOMContentLoaded", () => {
-  const box1 = document.querySelector(".comments img:nth-of-type(1)");
-  const box2 = document.querySelector(".comments img:nth-of-type(2)");
-  const box3 = document.querySelector(".comments img:nth-of-type(3)");
-  const box4 = document.querySelector(".comments img:nth-of-type(4)");
 
-  const TL = gsap.timeline({
+// 吹き出しの動き
+// const box1 = document.querySelector(".comments img:nth-of-type(1)");
+// const box2 = document.querySelector(".comments img:nth-of-type(2)");
+// const box3 = document.querySelector(".comments img:nth-of-type(3)");
+// const box4 = document.querySelector(".comments img:nth-of-type(4)");
+
+// const TL = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: ".campaign",
+//     scrub: true,
+//     start: "top 50%",
+//     end: "top 10%",
+//     markers: true,
+//   },
+//   defaults: {
+//     duration: 0.5,
+//     y: 30,
+//     autoAlpha: 0,
+//   },
+// });
+
+// TL.from(box1, {}).from(box2, {}).from(box3, {}).from(box4, {});
+
+// const box1 = document.querySelector(".comments img:nth-of-type(1)");
+// const box2 = document.querySelector(".comments img:nth-of-type(2)");
+// const box3 = document.querySelector(".comments img:nth-of-type(3)");
+// const box4 = document.querySelector(".comments img:nth-of-type(4)");
+// const trigger = document.querySelector(".js-fade-trigger");
+
+// const TL = gsap.timeline({
+// 	defaults: {
+// 		duration: 0.5,
+// 		y: 30,
+// 		autoAlpha: 0,
+// 	},
+// });
+
+// TL.from(box1, {
+// 	scrollTrigger: {
+// 		trigger: trigger,
+// 		scrub: true,
+// 		start: "top 60%",
+// 		end: "top 30%",
+// 	},
+// })
+// 	.from(box2, {
+// 		scrollTrigger: {
+// 			trigger: box1,
+// 			scrub: true,
+// 			start: "top 60%",
+// 			end: "top 30%",
+// 		},
+// 	})
+// 	.from(box3, {
+// 		scrollTrigger: {
+// 			trigger: box2,
+// 			scrub: true,
+// 			start: "top 60%",
+// 			end: "top 30%",
+// 		},
+// 	})
+// 	.from(box4, {
+// 		scrollTrigger: {
+// 			trigger: box3,
+// 			scrub: true,
+// 			start: "top 60%",
+// 			end: "top 30%",
+// 		},
+// 	});
+// });
+
+// 処理を簡潔に;
+const boxes = document.querySelectorAll(".comments img"); // .comments内の全ての画像を配列として取得
+const trigger = document.querySelector(".js-fade-trigger");
+
+boxes.forEach((box, index) => {
+  gsap.from(box, {
+    y: 30,
+    autoAlpha: 0,
+    duration: 0.5,
     scrollTrigger: {
-      trigger: ".campaign",
+      trigger: index === 0 ? trigger : boxes[index - 1], // 最初は trigger、以降は前のboxをトリガーに
       scrub: true,
-      start: "top 10%",
-      end: "bottom 10%",
-    },
-    defaults: {
-      duration: 0.5,
-      y: 30,
+      start: "top 60%",
+      end: "top 30%",
     },
   });
-
-  TL.from(box1, { autoAlpha: 0 })
-    .from(box2, { autoAlpha: 0 })
-    .from(box3, { autoAlpha: 0 })
-    .from(box4, { autoAlpha: 0 });
 });
